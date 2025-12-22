@@ -1,0 +1,15 @@
+apiVersion: tommy.me/v1
+kind: ServiceComponent
+metadata:
+  name: test
+  namespace: default
+spec:
+  mysql:
+    image:
+      registry:
+      imageName: mysql
+      tag: "8.0"
+    username: root
+    password: password
+    port: 3306
+    ttl: 3600
